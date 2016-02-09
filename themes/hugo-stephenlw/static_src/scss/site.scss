@@ -1,13 +1,21 @@
 
 @import "compass/css3";
+@import "bootstrap";
 @import "config";
 @import "menu";
 @import "project";
 
-a {
+body
+{
+    font-family: "Roboto", Arial;
+}
+
+a
+{
     color: #888;
 
-    &:hover {
+    &:hover
+    {
         text-decoration: none;
         color: #444;
         @include transition(color 0.2s);

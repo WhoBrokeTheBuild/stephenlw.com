@@ -6,18 +6,19 @@
     height: 30px;
     line-height: 30px;
     border: none;
+    border-right: 20px solid #FFF;
 
     a
     {
         display: inline-block;
         font-size: 18px;
-        padding: 0 5px;
+        padding: 0 10px;
         height: 30px;
         color: #FFF;
 
         &:first-child
         {
-            padding-left: 10px;
+            padding-left: 15px;
         }
 
         &:hover
@@ -28,11 +29,15 @@
         }
     }
 }
+.headerMenu__items
+{
+    float: left;
+}
 .headerMenu__colorWrap
 {
     float: right;
     font-size: 0;
-    margin-right: 6px;
+    margin-right: -15px;
 }
 .headerMenu__color
 {
@@ -64,8 +69,4 @@
 .headerMenu__color--6
 {
     background-color: $color_6;
-}
-.headerMenu__color--7
-{
-    background-color: $color_7;
 }

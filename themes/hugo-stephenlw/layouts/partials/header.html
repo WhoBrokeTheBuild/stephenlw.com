@@ -7,14 +7,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
         <link rel="stylesheet" href="/css/site.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
 <body>
 <div class="container header">
     <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
     <nav class="navbar headerMenu">
-        {{ range $menuItem := .Site.Params.menu }}
-            <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
-        {{ end }}
+        <div class="hidden-xs headerMenu__items">
+            {{ range $menuItem := .Site.Params.menu }}
+                <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+            {{ end }}
+        </div>
         <div class="headerMenu__colorWrap">
             <span class="headerMenu__color headerMenu__color--1"></span>
             <span class="headerMenu__color headerMenu__color--2"></span>
@@ -22,7 +25,6 @@
             <span class="headerMenu__color headerMenu__color--4"></span>
             <span class="headerMenu__color headerMenu__color--5"></span>
             <span class="headerMenu__color headerMenu__color--6"></span>
-            <span class="headerMenu__color headerMenu__color--7"></span>
         </div>
     </nav>
 </div>

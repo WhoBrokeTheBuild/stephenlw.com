@@ -9,10 +9,12 @@
                 <div class="projectListItem__circle"></div>
                 <div class="projectListItem__curve"></div>
                 <div class="projectListItem__titleWrap">
-                    {{ range .Params.tags }}
-                        <span class="projectListItem__tag projectListItem__tag--{{ . }}">{{ . }}</span>
-                    {{ end }}
                     <a class="projectListItem__title" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <div class="projectListItem__tagWrap">
+                        {{ range .Params.tags }}
+                            <span class="projectListItem__tag projectListItem__tag--{{ . }}">{{ . }}</span>
+                        {{ end }}
+                    </div>
                 </div>
                 <p class="projectListItem__summary">{{ .Params.summary }}</p>
             </div>
