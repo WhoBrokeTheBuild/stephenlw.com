@@ -5,7 +5,6 @@
 {
     border-left: 5px solid #AAA;
 
-    &:hover,
     &.hover
     {
         border-color: #444;
@@ -19,7 +18,6 @@
     margin-bottom: 40px;
     min-height: 100px;
 
-    &:hover,
     &.hover
     {
         .projectListItem__curve,
@@ -141,22 +139,18 @@
     border: 5px solid #AAA;
     border-radius: 25px;
 }
-.projectListItem__githubLink
+.projectListItem__image
 {
-    float: right;
-    opacity: 0.4;
-
-    &:hover
-    {
-        opacity: 1;
-        @include transition(opacity 0.2s);
-    }
 }
 @media (min-width: $screen-sm-min)
 {
     .projectList__wrap
     {
         margin-left: 20px;
+    }
+    .projectListItem__image
+    {
+        float: right;
     }
     .projectListItem__titleWrap
     {
@@ -172,5 +166,25 @@
     .projectListItem__summary
     {
         max-width: 80%;
+    }
+    .projectList__wrap
+    {
+        &:hover
+        {
+            border-color: #444;
+            @include transition(border-color 0.2s);
+        }
+    }
+    .projectListItem
+    {
+        &:hover
+        {
+            .projectListItem__curve,
+            .projectListItem__circle
+            {
+                border-color: #444;
+                @include transition(border-color 0.2s);
+            }
+        }
     }
 }

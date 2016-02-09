@@ -8,6 +8,9 @@
             <div class="projectListItem js-projectListItem">
                 <div class="projectListItem__circle"></div>
                 <div class="projectListItem__curve"></div>
+                {{ if isset .Params "image" }}
+                    <img class="projectListItem__image" src="{{ .Params.image }}" alt="{{ .Title }}" />
+                {{ end }}
                 <div class="projectListItem__titleWrap">
                     <a class="projectListItem__title" href="{{ .Permalink }}">{{ .Title }}</a>
                     <div class="projectListItem__tagWrap">
