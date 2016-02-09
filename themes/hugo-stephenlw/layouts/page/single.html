@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+    <div class="container">
+        <h1 class="pageTitle"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <div class="post">
+            {{ .Content }}
+        </div>
+
+     </div>
+
+{{ partial "footer.html" . }}

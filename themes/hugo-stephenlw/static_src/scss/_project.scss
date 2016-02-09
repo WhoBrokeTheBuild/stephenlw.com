@@ -54,25 +54,26 @@
     margin-top: 10px;
     margin-right: 10px;
     background-color: #AAA;
+    color: #000;
 }
 .projectListItem__tag--c
 {
-    background-color: #63BD09;
+    background-color: $color_1;
     color: #FFF;
 }
 .projectListItem__tag--cpp
 {
-    background-color: #2EAED9;
+    background-color: $color_2;
     color: #FFF;
 }
 .projectListItem__tag--java
 {
-    background-color: #6309BD;
+    background-color: $color_3;
     color: #FFF;
 }
 .projectListItem__tag--unreal
 {
-    background-color: #BD0909;
+    background-color: $color_4;
     color: #FFF;
 }
 .projectListItem__curve

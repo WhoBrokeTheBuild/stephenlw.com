@@ -11,9 +11,15 @@
 <body>
 <div class="container header">
     <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
-    <nav class="navbar header__menu">
+    <nav class="navbar headerMenu">
         {{ range $menuItem := .Site.Params.menu }}
             <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
         {{ end }}
+        <div class="headerMenu__colorWrap">
+            <span class="headerMenu__color headerMenu__color--1"></span>
+            <span class="headerMenu__color headerMenu__color--2"></span>
+            <span class="headerMenu__color headerMenu__color--3"></span>
+            <span class="headerMenu__color headerMenu__color--4"></span>
+        </div>
     </nav>
 </div>
