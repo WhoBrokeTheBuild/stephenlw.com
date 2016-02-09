@@ -1,4 +1,6 @@
-
++++
+title = "Resume"
++++
 # Stephen Lane-Walsh
 
 *Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbiest*

@@ -11,4 +11,9 @@
 <body>
 <div class="container header">
     <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
+    <nav class="navbar header__menu">
+        {{ range $menuItem := .Site.Params.menu }}
+            <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+        {{ end }}
+    </nav>
 </div>

@@ -13,6 +13,8 @@ gulp.task('default', ['styles', 'scripts'], function(){
 });
 
 gulp.task('styles', function() {
+	gulp.src(['static_src/css/**/*.css'])
+		.pipe(gulp.dest('static/css'));
 	return gulp.src(['static_src/scss/**/*.scss'])
 		.pipe(compass({
             project: path.join(__dirname, './'),
@@ -26,11 +28,13 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('static/css'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(minifycss())
-		.pipe(gulp.dest('html/css'));
+		.pipe(gulp.dest('static/css'));
 });
 
 gulp.task('scripts', function() {
-	return gulp.src('static_src/js/**/*.js')
+	gulp.src(['static_src/js/lib/**/*.js'])
+		.pipe(gulp.dest('static/js'));
+	return gulp.src('static_src/js/site/**/*.js')
 		.pipe(concat('site.js'))
 		.pipe(gulp.dest('static/js'))
 		.pipe(rename({ suffix: '.min' }))

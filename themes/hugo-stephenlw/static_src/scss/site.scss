@@ -1,4 +1,20 @@
 
+@import "compass/css3";
+@import "menu";
+@import "project";
+
 a {
-    color: #444;
+    color: #888;
+
+    &:hover {
+        text-decoration: none;
+        color: #444;
+        @include transition(color 0.2s);
+    }
+}
+
+.pageTitle
+{
+    font-size: 38px;
+    margin-bottom: 30px;
 }

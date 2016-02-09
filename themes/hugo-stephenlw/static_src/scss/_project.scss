@@ -1,0 +1,113 @@
+
+.project
+{
+
+}
+
+.projectList
+{
+}
+.projectList__wrap
+{
+    border-left: 5px solid #AAA;
+
+    &:hover
+    {
+        border-color: #444;
+        @include transition(border-color 0.2s);
+    }
+}
+.projectListItem
+{
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 40px;
+    min-height: 100px;
+
+    &:hover
+    {
+        .projectListItem__curve,
+        .projectListItem__circle
+        {
+            border-color: #444;
+            @include transition(border-color 0.2s);
+        }
+    }
+}
+.projectListItem__titleWrap
+{
+    max-width: 80%;
+    height: 40px;
+    line-height: 40px;
+}
+.projectListItem__title
+{
+    font-size: 30px;
+}
+.projectListItem__tag
+{
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #AAA;
+}
+.projectListItem__tag--c
+{
+    background-color: #63BD09;
+    color: #FFF;
+}
+.projectListItem__tag--cpp
+{
+    background-color: #2EAED9;
+    color: #FFF;
+}
+.projectListItem__tag--java
+{
+    background-color: #6309BD;
+    color: #FFF;
+}
+.projectListItem__tag--unreal
+{
+    background-color: #BD0909;
+    color: #FFF;
+}
+.projectListItem__curve
+{
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 5px solid #AAA;
+    border-right: 5px solid #AAA;
+}
+.projectListItem__circle
+{
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #AAA;
+    border-radius: 25px;
+}
+.projectListItem__githubLink
+{
+    float: right;
+    opacity: 0.4;
+
+    &:hover
+    {
+        opacity: 1;
+        @include transition(opacity 0.2s);
+    }
+}
+.projectListItem__summary
+{
+    max-width: 80%;
+}
