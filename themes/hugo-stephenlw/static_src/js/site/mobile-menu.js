@@ -153,7 +153,7 @@
         $pageWrap.animate({
             marginLeft: 0
         }, 'fast', function(){
-            $page.css('width', 'auto');
+            $pageWrap.css('width', 'auto');
         });
 
         forceRepaint($mobileMenuWrap);
