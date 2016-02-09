@@ -13,6 +13,8 @@ gulp.task('default', ['styles', 'scripts'], function(){
 	gulp.watch('static_src/js/**/*.js', ['scripts']);
 });
 
+gulp.task('build', ['styles', 'scripts']);
+
 gulp.task('styles', function() {
 	gulp.src(['static_src/css/**/*.css'])
 		.pipe(gulp.dest('static/css'));
