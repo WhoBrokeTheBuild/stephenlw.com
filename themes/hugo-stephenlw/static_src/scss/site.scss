@@ -2,14 +2,14 @@
 @import "compass/css3";
 @import "bootstrap";
 @import "config";
-@import "menu";
+@import "header";
+@import "mobile-menu";
 @import "project";
 
 body
 {
     font-family: "Roboto", Arial;
 }
-
 a
 {
     color: #888;
@@ -21,7 +21,6 @@ a
         @include transition(color 0.2s);
     }
 }
-
 .pageTitle
 {
     font-size: 38px;

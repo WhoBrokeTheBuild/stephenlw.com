@@ -5,26 +5,36 @@
         <title>{{ .Site.Title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
         <link rel="stylesheet" href="/css/site.css" media="screen">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
 <body>
-<div class="container header">
-    <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
-    <nav class="navbar headerMenu">
-        <div class="hidden-xs headerMenu__items">
-            {{ range $menuItem := .Site.Params.menu }}
-                <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
-            {{ end }}
-        </div>
-        <div class="headerMenu__colorWrap">
-            <span class="headerMenu__color headerMenu__color--1"></span>
-            <span class="headerMenu__color headerMenu__color--2"></span>
-            <span class="headerMenu__color headerMenu__color--3"></span>
-            <span class="headerMenu__color headerMenu__color--4"></span>
-            <span class="headerMenu__color headerMenu__color--5"></span>
-            <span class="headerMenu__color headerMenu__color--6"></span>
-        </div>
-    </nav>
+<div class="mobileMenuWrap hidden-sm js-mobileMenuWrap">
+    {{ range $menuItem := .Site.Params.menu }}
+        <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+    {{ end }}
 </div>
+<div class="js-pageWrap">
+    <div class="container header">
+        <div class="mobileMenuIcon visible-xs js-mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
+        <nav class="navbar headerMenu">
+            <div class="hidden-xs headerMenu__items">
+                {{ range $menuItem := .Site.Params.menu }}
+                    <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+                {{ end }}
+            </div>
+            <div class="headerMenu__colorWrap">
+                <span class="headerMenu__color headerMenu__color--1"></span>
+                <span class="headerMenu__color headerMenu__color--2"></span>
+                <span class="headerMenu__color headerMenu__color--3"></span>
+                <span class="headerMenu__color headerMenu__color--4"></span>
+                <span class="headerMenu__color headerMenu__color--5"></span>
+                <span class="headerMenu__color headerMenu__color--6"></span>
+            </div>
+        </nav>
+    </div>

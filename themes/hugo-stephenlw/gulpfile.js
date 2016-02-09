@@ -1,6 +1,7 @@
 var gulp             = require('gulp'),
 	compass          = require('gulp-compass'),
 	autoprefixer     = require('gulp-autoprefixer'),
+	sourcemaps = require('gulp-sourcemaps'),
 	minifycss        = require('gulp-minify-css'),
 	uglify           = require('gulp-uglify'),
 	rename           = require('gulp-rename'),
@@ -35,9 +36,11 @@ gulp.task('scripts', function() {
 	gulp.src(['static_src/js/lib/**/*.js'])
 		.pipe(gulp.dest('static/js'));
 	return gulp.src('static_src/js/site/**/*.js')
+    	.pipe(sourcemaps.init())
 		.pipe(concat('site.js'))
 		.pipe(gulp.dest('static/js'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
+    	.pipe(sourcemaps.write())
 		.pipe(gulp.dest('static/js'));
 });

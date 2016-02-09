@@ -156,10 +156,6 @@
         @include transition(opacity 0.2s);
     }
 }
-.projectListItem__summary
-{
-    max-width: 80%;
-}
 @media (min-width: $screen-sm-min)
 {
     .projectList__wrap
@@ -176,5 +172,9 @@
     {
         float: right;
         margin-bottom: 0;
+    }
+    .projectListItem__summary
+    {
+        max-width: 80%;
     }
 }
