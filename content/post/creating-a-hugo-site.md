@@ -113,7 +113,7 @@ as any number of theme-specific params. Here is an example config.toml file.
 
     baseurl = "http://example.com/"
     theme = "theme-name"
-    title = "Your Name Here"
+    title = "Site Name Here"
 
     contentdir = "content"
     layoutdir = "layouts"
@@ -125,20 +125,13 @@ as any number of theme-specific params. Here is an example config.toml file.
     PaginatePath = "/"
 
     [author]
-        name = "Stephen Lane-Walsh"
+        name = "Your Name Here"
 
     [permalinks]
         page = "/:title/"
         post = "/article/:title/"
 
     [params]
-        title = "Stephen Lane-Walsh"
-        subtitle = "Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbiest"
-        description = "Stephen Lane-Walsh's Portfolio Site"
-        author = "Stephen Lane-Walsh"
+        description = "Site Description"
 
-        menu = [
-            ["/resume/",    "Resume"],
-            ["/project/",   "Projects"],
-            ["/post/",      "Blog"]
-        ]
+        # Theme specific parameters go here
