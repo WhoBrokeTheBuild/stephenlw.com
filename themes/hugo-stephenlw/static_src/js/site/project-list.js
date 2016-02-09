@@ -6,9 +6,10 @@
         if ($('.js-projectList').length)
         {
             $(window).scroll(function(){
-                var scrollY = $(window).scrollTop();
-                var $listItems = $('.js-projectListItem');
-                var $listWrap = $('.js-projectListWrap');
+                var scrollY = $(window).scrollTop(),
+                    scrollMid = scrollY + ($(window).height() / 3),
+                    $listItems = $('.js-projectListItem'),
+                    $listWrap = $('.js-projectListWrap');
 
                 if (scrollY === 0)
                 {
@@ -20,8 +21,12 @@
                 var found = false;
                 for (var i = 0; i < $listItems.length; ++i)
                 {
-                    var $listItem = $($listItems[i]);
-                    if (!found && $listItem.offset().top > scrollY)
+                    var $listItem = $($listItems[i]),
+                        itemOffsetY = $listItem.offset().top;
+
+                    if (!found &&
+                        itemOffsetY > scrollY &&
+                        itemOffsetY + $listItem.height() > scrollMid)
                     {
                         $listItem.addClass('hover');
                         $listWrap.addClass('hover');
