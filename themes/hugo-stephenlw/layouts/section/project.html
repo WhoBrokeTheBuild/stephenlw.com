@@ -1,11 +1,11 @@
 {{ partial "header.html" . }}
 
-    <div class="container projectList">
+    <div class="container projectList js-projectList">
 
         <h1 class="pageTitle">Projects</h1>
-        <div class="projectList__wrap">
+        <div class="projectList__wrap js-projectListWrap">
             {{ range .Data.Pages }}
-            <div class="projectListItem">
+            <div class="projectListItem js-projectListItem">
                 <div class="projectListItem__circle"></div>
                 <div class="projectListItem__curve"></div>
                 <div class="projectListItem__titleWrap">

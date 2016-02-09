@@ -73,11 +73,29 @@
     top: 19px;
     left: 8px;
 }
-.mobileMenuWrap {
+.mobileMenuWrap
+{
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     overflow: hidden;
+    background-color: #AAA;
+    border-top: 20px solid #666;
+}
+.mobileMenuItem
+{
+    display: block;
+    color: #FFF;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+
+    &:hover
+    {
+        background-color: #FFF;
+        @include transition(color 0.2s, background-color 0.2s);
+    }
 }

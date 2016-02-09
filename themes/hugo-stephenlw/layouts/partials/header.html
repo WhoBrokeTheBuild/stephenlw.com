@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>{{ .Site.Title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="/css/site.css" media="screen">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
 <body>
 <div class="mobileMenuWrap hidden-sm js-mobileMenuWrap">
     {{ range $menuItem := .Site.Params.menu }}
-        <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+        <a class="mobileMenuItem" href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
     {{ end }}
 </div>
 <div class="js-pageWrap">

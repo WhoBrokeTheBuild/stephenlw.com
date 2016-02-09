@@ -83,3 +83,10 @@
         margin-left: 0;
     }
 }
+@media (max-width: 400px)
+{
+    .header__title
+    {
+        font-size: 26px;
+    }
+}
