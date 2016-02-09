@@ -9,13 +9,9 @@
                 <div class="projectListItem__circle"></div>
                 <div class="projectListItem__curve"></div>
                 <div class="projectListItem__titleWrap">
-                    <a class="projectListItem__githubLink" href="{{ .Params.githublink }}" title="View on GitHub">
-                        <img src="/images/github.png" alt="GitHub" />
-                    </a>
-                    <span class="projectListItem__tag projectListItem__tag--c">C</span>
-                    <span class="projectListItem__tag projectListItem__tag--cpp">C++</span>
-                    <span class="projectListItem__tag projectListItem__tag--java">Java</span>
-                    <span class="projectListItem__tag projectListItem__tag--unreal">Unreal</span>
+                    {{ range .Params.tags }}
+                        <span class="projectListItem__tag projectListItem__tag--{{ . }}">{{ . }}</span>
+                    {{ end }}
                     <a class="projectListItem__title" href="{{ .Permalink }}">{{ .Title }}</a>
                 </div>
                 <p class="projectListItem__summary">{{ .Params.summary }}</p>

@@ -10,6 +10,7 @@
 .projectList__wrap
 {
     border-left: 5px solid #AAA;
+    margin-left: 20px;
 
     &:hover
     {
@@ -60,21 +61,61 @@
 {
     background-color: $color_1;
     color: #FFF;
+    font-size: 0;
+
+    &::after
+    {
+        content: "C";
+        font-size: 14px;
+    }
 }
 .projectListItem__tag--cpp
 {
     background-color: $color_2;
     color: #FFF;
+    font-size: 0;
+
+    &::after
+    {
+        content: "C++";
+        font-size: 14px;
+    }
 }
 .projectListItem__tag--java
 {
     background-color: $color_3;
     color: #FFF;
+    font-size: 0;
+
+    &::after
+    {
+        content: "Java";
+        font-size: 14px;
+    }
 }
-.projectListItem__tag--unreal
+.projectListItem__tag--asm
 {
     background-color: $color_4;
     color: #FFF;
+    font-size: 0;
+
+    &::after
+    {
+        content: "Assembly";
+        font-size: 14px;
+    }
+}
+.projectListItem__tag--unreal
+{
+    background-color: $color_6;
+    color: #FFF;
+    font-size: 0;
+
+    &::after
+    {
+        content: "Unreal";
+        font-size: 14px;
+    }
 }
 .projectListItem__curve
 {
