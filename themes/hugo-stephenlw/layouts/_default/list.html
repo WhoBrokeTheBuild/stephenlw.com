@@ -5,6 +5,8 @@
         {{ range .Data.Pages }}
         <div>
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="post__date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+            <p class="post__summary">{{ .Summary }}</p>
         </div>
         {{ end }}
 
