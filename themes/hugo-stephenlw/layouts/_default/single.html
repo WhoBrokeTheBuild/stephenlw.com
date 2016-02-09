@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+    <div class="container">
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+        <div class="post">
+            {{ .Content }}
+        </div>
+
+     </div>
+
+{{ partial "footer.html" . }}

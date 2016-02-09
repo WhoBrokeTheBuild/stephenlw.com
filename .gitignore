@@ -22,3 +22,14 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+#node files
+/themes/hugo-stephenlw/node_modules/
+
+#sass cache files
+.sass-cache
+
+/themes/hugo-stephenlw/static/css
+/themes/hugo-stephenlw/static/js
+
+/public/

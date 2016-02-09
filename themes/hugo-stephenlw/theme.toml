@@ -1,0 +1,8 @@
+name = "stephenlw.com"
+license = "GPLv3"
+licenselink = "https://github.com/whobrokethebuild/stephenlw.com/LICENSE"
+min_version= 0.13
+
+[author]
+  name = "Stephen Lane-Walsh"
+  homepage = "http://stephenlw.com"
