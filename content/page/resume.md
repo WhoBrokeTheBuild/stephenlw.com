@@ -32,21 +32,16 @@ Interested in a diverse field of technologies including OS/Kernel Development, E
 
 ### Work Experience
 
-<div>
 <b>Software Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
-<b style="float: right">2014 - Present</b>
-</div>
-<span style="margin-left: 20px">WordPress/Tools Development, Server Management, Team Organization/Management</span>
+<span class="resume__right">**2014 - Present**</span>
 
-<div>
+<span class="resume__indent">WordPress/Tools Development, Server Management, Team Organization/Management</span>
+
 <b>Sr. Web Developer</b> at [Berkshire Direct](http://berkshiredirect.com) / [The White Label Agency](http://thewhitelabelagency.com)
-<b style="float: right">2010 - 2014</b>
-</div>
+<span class="resume__right">**2010 - 2014**</span>
 
-<div>
 <b>Webmaster</b> at [Jacques Amand Intl, Ltd](http://jacquesamandintl.com) / [The Tulip Gallery](http://thetulipgallery.com)
-<b style="float: right">2009 - 2015</b>
-</div>
+<span class="resume__right">**2009 - 2015**</span>
 
 ---
 
@@ -100,44 +95,31 @@ Also experienced setting up a physical network, including the planning and insta
 
 ### Education
 
-<div>
-<b>Champlain College</b>, Burlington VT
-<b style="float: right">2012 - Present</b>  
-</div>
-<span style="margin-left: 20px">Majoring in Computer Science & Innovation, with a minor in Game/Simulation Programming</span>
+**Champlain College**, Burlington VT
+<span class="resume__right">**2012 - Present**</span>
 
-<div>
-<b>Berkshire Community College</b>, Pittsfield, MA
-<b style="float: right">2010</b>  
-</div>
+<span class="resume__indent">Majoring in Computer Science & Innovation, with a minor in Game/Simulation Programming</span>
 
-<div>
-<b>McCann Vocational Technical High School</b>, North Adams, MA
-<b style="float: right">2008 - 2012</b>
-</div>
+**Berkshire Community College**, Pittsfield, MA
+<span class="resume__right">**2010**</span>  
 
-<span style="margin-left: 40px">Studying Information Technology & Engineering</span>
+**McCann Vocational Technical High School**, North Adams, MA
+<span class="resume__right">**2008 - 2012**</span>  
+
+<span class="resume__indent">Studying Information Technology & Engineering</span>
 
 ---
 
 ### Awards & Certifications
 
-<div>
-<b>[A+ Certified](https://certification.comptia.org/certifications/a)</b>
-<b style="float: right">2010 - 2012</b>
-</div>
+**[A+ Certified](https://certification.comptia.org/certifications/a)**
+<span class="resume__right">**2010 - 2012**</span>  
 
-<div>
-<b>[Cisco NetRiders](http://www.academynetriders.com/index.php)</b> USA & Canada - 18th Place
-<b style="float: right">2012</b>
-</div>
+**[Cisco NetRiders](http://www.academynetriders.com/index.php)** USA & Canada - 18th Place
+<span class="resume__right">**2012**</span>  
 
-<div>
-<b>[BPA](http://www.bpa.org/)</b> State & Nationals - Various Awards
-<b style="float: right">2008 - 2012</b>
-</div>
+**[BPA](http://www.bpa.org/)** State & Nationals - Various Awards
+<span class="resume__right">**2008 - 2012**</span>
 
-<div>
-<b>[SkillsUSA](http://www.skillsusa.org/)</b> State - Various Awards
-<b style="float: right">2008 - 2012</b>
-</div>
+**[SkillsUSA](http://www.skillsusa.org/)** State - Various Awards
+<span class="resume__right">**2008 - 2012**</span>
