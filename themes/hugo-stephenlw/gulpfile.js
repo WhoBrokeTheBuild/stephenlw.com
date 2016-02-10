@@ -1,8 +1,8 @@
 var gulp             = require('gulp'),
 	compass          = require('gulp-compass'),
 	autoprefixer     = require('gulp-autoprefixer'),
-	sourcemaps = require('gulp-sourcemaps'),
-	minifycss        = require('gulp-minify-css'),
+	sourcemaps 		 = require('gulp-sourcemaps'),
+	cssnano          = require('gulp-cssnano'),
 	uglify           = require('gulp-uglify'),
 	rename           = require('gulp-rename'),
 	concat           = require('gulp-concat'),
@@ -17,6 +17,7 @@ gulp.task('build', ['styles', 'scripts']);
 
 gulp.task('styles', function() {
 	gulp.src(['static_src/css/**/*.css'])
+		.pipe(cssnano())
 		.pipe(gulp.dest('static/css'));
 	return gulp.src(['static_src/scss/**/*.scss'])
 		.pipe(compass({
@@ -28,14 +29,13 @@ gulp.task('styles', function() {
             sourcemap: true
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest('static/css'))
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(minifycss())
+		.pipe(cssnano())
 		.pipe(gulp.dest('static/css'));
 });
 
 gulp.task('scripts', function() {
 	gulp.src(['static_src/js/lib/**/*.js'])
+		.pipe(uglify())
 		.pipe(gulp.dest('static/js'));
 	return gulp.src('static_src/js/site/**/*.js')
     	.pipe(sourcemaps.init())

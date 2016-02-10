@@ -106,7 +106,7 @@ so if you don't know what Markdown is you can check it out here http://commonmar
 
 ## Hugo Config
 
-The config file is the heart of your site, without this hugo won't even run. All
+The config file is the heart of your site, without this Hugo won't even run. All
 config and metadata in Hugo can be expressed in either TOML, YAML, or JSON. Hugo
 will look for data in the order, meaning that if you had a config.toml and a
 config.yaml, the config.toml would be used.
@@ -268,12 +268,13 @@ the archetype.
 
 ### Compiling Site
 
-If you want to built this fine site you've made and get it ready for deployment
-to a webserver like Apache or Nginx, then you simply run the following command from the directory your config.toml/yaml/json is.
+If you want to build this fine site you've made and get it ready for deployment
+to a webserver like Apache or Nginx, then you simply run the following command 
+from the directory your config.toml/yaml/json is.
 
     hugo
 
-Assuming hugo is installed correctly, it should give you an output like the following.
+Assuming Hugo is installed correctly, it should give you an output like the following.
 
     0 draft content
     0 future content
