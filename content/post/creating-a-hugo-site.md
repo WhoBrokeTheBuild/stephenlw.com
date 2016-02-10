@@ -16,7 +16,7 @@ compiled/minified css/js.
 I'll walk you through the steps I took to get my site up and running, with the
 hope that this guide may help someone else who ran into the same issues.
 
-## Installing Go
+# Installing Go
 
 Hugo requires Go 1.4 or higher, which can be tricky to install on some systems.
 Fedora ships with Go 1.5.3, where Ubuntu ships with a much lower version. To get
@@ -32,12 +32,13 @@ to what is essentially your Go workspace. You may want to change it to something
 that's a little easier to remember, and also add any applications built using Go
 onto your path. To do this, append this to the end of your ~/.bashrc file.
 
-    export GOPATH=~/go # Or whatever you want to use
-    export PATH=$PATH:$GOPATH/bin
+<pre><code class="highlight bash">export GOPATH=~/go # Or whatever you want to use
+export PATH=$PATH:$GOPATH/bin
+</code></pre>
 
 Once that's done, simply open a new bash prompt and you're ready to start using Go!
 
-## Building Hugo from Source
+# Building Hugo from Source
 
 If you can't use any of the builds from the Hugo download page, or just want to
 run the latest and greatest, it's pretty easy to build go from source. You can
@@ -50,10 +51,10 @@ at https://github.com/spf13/hugo/, and get it using Go's "go get" command like s
 If you did not follow the earlier steps for installing go and have a version lower
 than 1.4, you will not be able to build hugo in this way.
 
-## Using Hugo
+# Using Hugo
 
 The first step in using hugo is setting up your site, this should be setup like
-so.
+so. Below I will explain what all of these files are and how to make them.
 
     .
     ├── config.toml
@@ -67,41 +68,41 @@ so.
     ├── data
     ├── layouts
     ├── themes
-    |   └── your-theme-here
     └── static
         ├── css
         └── js
 
-### TOML
+## TOML
 
-In this guide I will be using TOML (Tom's Obvious Minimal Language) for it's
-simplicity, and it being the default used by Hugo. Before starting Hugo development
-I had never heard of TOML before, so here's a quick introduction for anyone else
-seeing it for the first time.
+In this guide I will be using [TOML](https://github.com/toml-lang/toml) (Tom's
+Obvious Minimal Language) for it's simplicity, and it being the default used by
+Hugo. Before starting Hugo development I had never heard of TOML before, so
+here's a quick introduction for anyone else seeing it for the first time.
 
-    # This is a Comment
+<pre><code class="highlight language-toml ini"># This is a Comment
 
-    title = "TOML Example"
-    showsomething = false
-    count = 4
-    date = 1979-05-27T07:32:00-08:00 # First class dates
+title = "TOML Example"
+showsomething = false
+count = 4
+date = 1979-05-27T07:32:00-08:00 # First class dates
 
-    [author]
-        name = "Stephen Lane-Walsh"
+[author]
+    name = "Stephen Lane-Walsh"
 
-    [params]
-        items = [ "item1", "item2", "item3" ]
-        subitems = [
-            ["item1.1", "item1.2"],
-            ["item2"]
-        ]
+[params]
+    items = [ "item1", "item2", "item3" ]
+    subitems = [
+        ["item1.1", "item1.2"],
+        ["item2"]
+    ]
+</code></pre>
 
-### Markdown
+## Markdown
 
-All content used by Hugo is written in Markdown. I won't give an example justice,
+All content used by Hugo is written in Markdown. I won't do an example justice,
 so if you don't know what Markdown is you can check it out here http://commonmark.org/.
 
-### Hugo Config
+## Hugo Config
 
 The config file is the heart of your site, without this hugo won't even run. All
 config and metadata in Hugo can be expressed in either TOML, YAML, or JSON. Hugo
@@ -111,27 +112,122 @@ config.yaml, the config.toml would be used.
 There are a few options that are necessary in order to get Hugo running, as well
 as any number of theme-specific params. Here is an example config.toml file.
 
-    baseurl = "http://example.com/"
-    theme = "theme-name"
-    title = "Site Name Here"
+<pre><code class="highlight language-toml ini">baseurl = "http://example.com/"
+theme = "theme-name"
+title = "Site Name Here"
 
-    contentdir = "content"
-    layoutdir = "layouts"
-    publishdir = "public"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
 
-    builddrafts = false
-    canonifyurls = true
-    paginate = 3
-    PaginatePath = "/"
+builddrafts = false
+canonifyurls = true
+paginate = 3
+PaginatePath = "/"
 
-    [author]
-        name = "Your Name Here"
+[author]
+    name = "Your Name Here"
 
-    [permalinks]
-        page = "/:title/"
-        post = "/article/:title/"
+[permalinks]
+    page = "/:title/"
+    post = "/article/:title/"
 
-    [params]
-        description = "Site Description"
+[params]
+    description = "Site Description"
 
-        # Theme specific parameters go here
+    # Theme specific parameters go here
+</code></pre>
+
+## Installing Themes
+
+If you plan on using an existing theme, take a look here http://themes.gohugo.io/.
+Most themes come with installation instructions, but the general way to install
+a theme is to find the repository URL, and clone it inside your themes/ directory like so.
+
+<pre><code class="highlight bash">cd $SITE_DIR/themes
+git clone https://github.com/nilproductions/hugo-bootswatch.git
+</code></pre>
+
+After you've installed a theme, don't forget to update your config file and set
+"theme" to the directory name of your new theme. For Bootswatch that would be
+hugo-bootswatch.
+
+## Archetypes
+
+Archetypes are ways of organizing content and setting default front matter. This
+is useful if you're adding a type of content such as "projects" or "animals" and
+want to have a default set of front matter applied to all new entries that are
+created using the ```hugo new``` command (See Commands).
+
+An archetype document simply contains the front matter and it's default values,
+for example, to create an archetype file for a type called "thing" you would
+make the file "archetypes/thing.md" and fill it with the following.
+
+<pre><code class="highlight language-toml ini">+++
+tags = [ "new" ]
+image = ""
+something = false
++++
+</code></pre>
+
+
+## Content
+
+## Layouts
+
+## Static
+
+## Commands
+
+### Creating Content
+
+If you want to add new content, you can run the following command to generate a
+blank document with the default front matter filled in.
+
+    hugo new post/blog-post.md
+
+This can be used for any archetype you have by replacing "post" with the name of
+the archetype.
+
+### Compiling Site
+
+If you want to built this fine site you've made and get it ready for deployment
+to a webserver like Apache or Nginx, then you simply run the following command from the directory your config.toml/yaml/json is.
+
+    hugo
+
+Assuming hugo is installed correctly, it should give you an output like the following.
+
+    0 draft content
+    0 future content
+    5 pages created
+    0 non-page files copied
+    0 paginator pages created
+    5 tags created
+    0 categories created
+    in 20 ms
+
+If you check your public/ directory (or wherever your config says to place the
+compiled files) you should now find a fully built site. You may also run hugo
+and tell it to copy the files directly to your web root with a command like the
+following.
+
+    hugo -d /var/www/
+
+#### Developing Locally
+
+If you're working on your site locally and want to see your changes as you make
+them, you can run the following.
+
+    hugo server
+
+Which will output something similar to
+
+    ...
+    Serving pages from memory
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+
+Which means your site is now visible from http://localhost:1313/. Once you're on
+that page, it will auto reload when any changes are made to the files in your
+site.

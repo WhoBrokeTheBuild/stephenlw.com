@@ -10,7 +10,10 @@ publishdir = "public"
 builddrafts = false
 canonifyurls = true
 paginate = 3
-PaginatePath = "/"
+paginatepath = "/"
+
+pygmentsuseclasses = false
+pygmentstyle = "monokai"
 
 [author]
     name = "Stephen Lane-Walsh"

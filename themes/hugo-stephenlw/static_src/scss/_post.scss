@@ -1,8 +1,18 @@
 .post__date
 {
+    padding-bottom: 15px;
 }
-.post__content
+@media (min-width: $screen-md-min)
 {
-    padding: 15px;
-    max-width: 60%;
+    .post__content
+    {
+        max-width: 80%;
+    }
+}
+@media (min-width: $screen-lg-min)
+{
+    .post__content
+    {
+        max-width: 70%;
+    }
 }
