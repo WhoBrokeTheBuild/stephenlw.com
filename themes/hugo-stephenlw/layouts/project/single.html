@@ -3,10 +3,8 @@
 
 <div class="container project">
 
-    <a href="{{ $baseurl }}project/">Back to Projects</a>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <a href="{{ .Params.githublink }}">View on GitHub</a>
-
+    <p>{{ .Content }}</p>
 </div>
 
 {{ partial "footer.html" . }}
