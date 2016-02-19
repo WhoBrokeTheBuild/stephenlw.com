@@ -1,0 +1,33 @@
+.frontPage
+{
+    padding-bottom: 60px;
+}
+.frontPage__banner
+{
+    padding-bottom: 30px;
+    border-bottom: 5px solid #444;
+    margin-bottom: 0;
+}
+.frontPage__viewAll
+{
+    float: right;
+    margin-top: 20px;
+    line-height: 36px;
+}
+.frontPage__projectList,
+.frontPage__postList
+{
+    padding-bottom: 40px;
+}
+.frontPage__projectList
+{
+    border-bottom: 5px solid #444;
+}
+@media (min-width: $screen-sm-min)
+{
+    .frontPage__projectList
+    {
+        border-right: 5px solid #444;
+        border-bottom: 0;
+    }
+}

@@ -1,13 +1,25 @@
 {{ partial "header.html" . }}
 
-    <div class="container">
-
-        {{ range .Data.Pages }}
-        <div>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="container frontPage">
+        <h2 class="text-center frontPage__banner">Software Engineer, Server Administrator, Full-Stack Developer &amp; Curious Hobbiest</h2>
+        <div class="frontPage__projectList col-sm-6">
+            <a href="/project" class="frontPage__viewAll">View All</a>
+            <h1>Projects</h1>
+            {{ range where .Data.Pages "Section" "project" }}
+            <div>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            </div>
+            {{ end }}
         </div>
-        {{ end }}
-
+        <div class="frontPage__blogList col-sm-6">
+            <a href="/post" class="frontPage__viewAll">View All</a>
+            <h1>Blog Posts</h1>
+            {{ range where .Data.Pages "Section" "post" }}
+            <div>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            </div>
+            {{ end }}
+        </div>
     </div>
 
 {{ partial "footer.html" . }}
