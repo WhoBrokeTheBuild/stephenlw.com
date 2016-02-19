@@ -5,7 +5,7 @@
 .frontPage__banner
 {
     padding-bottom: 30px;
-    border-bottom: 5px solid #444;
+    border-bottom: 5px solid #666;
     margin-bottom: 0;
 }
 .frontPage__viewAll
@@ -21,13 +21,13 @@
 }
 .frontPage__projectList
 {
-    border-bottom: 5px solid #444;
+    border-bottom: 5px solid #666;
 }
 @media (min-width: $screen-sm-min)
 {
     .frontPage__projectList
     {
-        border-right: 5px solid #444;
+        border-right: 5px solid #666;
         border-bottom: 0;
     }
 }
