@@ -131,16 +131,16 @@ of tools are mostly node packages, so let's install that first.
 To use the tools in the way I have, I have laid out my directory structure as
 follows:
 
-themes/
-    ├── static/
-    |   ├── css/
-    |   ├── images/
-    |   └── fonts/
-    └── static_src/
-        ├── sass/
-        └── js/
+    themes/
+        ├── static/
+        |   ├── css/
+        |   ├── images/
+        |   └── fonts/
+        └── static_src/
             ├── sass/
             └── js/
+                ├── sass/
+                └── js/
 
 ## Installing the Tools
 
@@ -278,4 +278,4 @@ are made, run the following:
     gulp
 
 This also goes very well with `hugo server` as it will refresh the page even
-when gulp changes files. 
+when gulp changes files.
