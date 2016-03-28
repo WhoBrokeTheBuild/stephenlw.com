@@ -1,12 +1,21 @@
 {{ partial "header.html" . }}
 
     <div class="container">
-        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        <span class="post__date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+        <div class="post__sidebar js-sidebar">
+            <div class="post__sidebarTitle js-sidebar-toggle">Other Posts <span class="post__sidebarIndicator glyphicon glyphicon-triangle-top"></span></div>
+            <ul>
+                {{ range where .Site.Pages "Section" "post" }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
         <div class="post__content">
+            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <span class="post__date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
             {{ .Content }}
         </div>
-
      </div>
 
 {{ partial "footer.html" . }}
