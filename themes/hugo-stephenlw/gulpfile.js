@@ -38,8 +38,8 @@ gulp.task('scripts', function() {
 		.pipe(uglify())
 		.pipe(gulp.dest('static/js'));
 	return gulp.src('static_src/js/site/**/*.js')
-    	.pipe(sourcemaps.init())
 		.pipe(concat('site.js'))
+    	.pipe(sourcemaps.init())
 		.pipe(gulp.dest('static/js'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
