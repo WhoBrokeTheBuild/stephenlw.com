@@ -15,6 +15,8 @@
             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
             <span class="post__date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
             {{ .Content }}
+            <br />
+            <div class="fb-like" data-href="{{ .Permalink }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
      </div>
 
