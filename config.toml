@@ -24,7 +24,7 @@ pygmentstyle = "monokai"
 
 [params]
     title = "Stephen Lane-Walsh"
-    subtitle = "Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbiest"
+    subtitle = "Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbyist"
     description = "Stephen Lane-Walsh's Portfolio Site"
     author = "Stephen Lane-Walsh"
 
