@@ -3,7 +3,7 @@ title = "Resume"
 +++
 # Stephen Lane-Walsh
 
-*Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbiest*
+*Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbyist*
 
 **Tel:** 413 884 5335  
 **Email:** sdl.slane@gmail.com  
