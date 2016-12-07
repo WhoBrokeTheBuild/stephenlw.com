@@ -1,6 +1,9 @@
 +++
 title = "Resume"
 +++
+
+[Download as PDF](/download/Resume.pdf)
+
 # Stephen Lane-Walsh
 
 *Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbyist*
@@ -9,31 +12,31 @@ title = "Resume"
 **Email:** sdl.slane@gmail.com  
 **Website:** [www.stephenlw.com](http://www.stephenlw.com)  
 **GitHub:** [www.github.com/WhoBrokeTheBuild](http://www.github.com/whobrokethebuild)  
-**Address:** 230B West St., Winooski VT, 05404
-
----
-
-### Summary
-
-Professional, experienced software engineer, server administrator, full-stack developer.
-Dependable, conscientious, highly efficient, self starter, managerial experience, and a great team player.
 
 ---
 
 ### Highlights
 
-Champlain College, Majoring in Computer Science & Innovation, with a Minor in Game/Simulation Programming, graduating May 2016.
+Linux-focused system administrator with recent experience in Ansible and Docker. Experienced with server and application management across physical and virtualized systems, both in house and cloud based.
 
-Highly Experienced with C/C++, Docker, Linux Server Management, PHP, HTML, CSS, JS, MySQL, Git, and OpenGL.
-
-Interested in a diverse field of technologies including OS/Kernel Development, Electronic Hardware Development, Artificial Intelligence, 3D Graphics Programming, Low-Level Optimization, and Networked Programming.
+Software engineer working with both web and traditional applications such as WordPress websites and C# API development. Interested in a diverse field of technologies including OS/Kernel Development, Electronic Hardware Development, Artificial Intelligence, 3D Graphics Programming, Low-Level Optimization, and Networked Programming.
 
 ---
 
 ### Work Experience
 
+<b>Puzzle Development Assistant</b> at [Esc4pe](http://esc4pe.com)
+<span class="resume__right">**Aug 2016 - Present**</span>
+
+<span class="resume__indent">Arduinos, Puzzle Creation, Linux Software Development</span>
+
+<b>Systems Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
+<span class="resume__right">**May 2016 - Present**</span>
+
+<span class="resume__indent">Linux Administration, Spacewalk, PowerShell Automation Scripting, Docker, Ansible</span>
+
 <b>Software Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
-<span class="resume__right">**2014 - Present**</span>
+<span class="resume__right">**2014 - May 2016**</span>
 
 <span class="resume__indent">WordPress/Tools Development, Server Management, Team Organization/Management</span>
 
@@ -42,6 +45,23 @@ Interested in a diverse field of technologies including OS/Kernel Development, E
 
 <b>Webmaster</b> at [Jacques Amand Intl, Ltd](http://jacquesamandintl.com) / [The Tulip Gallery](http://thetulipgallery.com)
 <span class="resume__right">**2009 - 2015**</span>
+
+---
+
+### Education
+
+**Champlain College**, Burlington VT
+<span class="resume__right">**2012 - 2016**</span>
+
+<span class="resume__indent">Bachelors in Computer Science & Innovation, with a minor in Game/Simulation Programming</span>
+
+**Berkshire Community College**, Pittsfield, MA
+<span class="resume__right">**2010**</span>  
+
+**McCann Vocational Technical High School**, North Adams, MA
+<span class="resume__right">**2008 - 2012**</span>  
+
+<span class="resume__indent">Studying Information Technology & Engineering</span>
 
 ---
 
@@ -59,54 +79,37 @@ Created a Hugo-like static-site generator in Go named [GoingUp](http://github.co
 
 ---
 
-### Programming Languages
+### System Administration
 
-**Highly Experienced:** C/C++, PHP, HTML5/XHTML, CSS, JS, SQL (MySQL, MSSQL, SQLite)
+**Highly Experienced:** CentOS/RHEL Linux, Windows Server 2008+, Spacewalk, Docker, Ansible, VMWare vSphere, Apache/Nginx, MySQL, Active Directory, DNS, Winbind/Realmd
 
-**Proficient:** Go, C#, Java, Python, Arduino, PIC Basic, x86/x86_64/ARM Assembly, HLSL/GLSL, Bash, Batch/PowerShell
-
----
-
-### Frameworks & Libraries
-
-**Highly Experienced:** OpenGL, OpenAL, DirectX, Asio, Protocol Buffers/Flatbuffers, jQuery, WordPress, CodeIgniter
-
-**Proficient:** Android, Glib, GTK+, Various C/C++ Integration Libraries
+**Proficient:** IIS, MSSQL, EMC SAN, Microsoft Exchange, DHCP, Rackspace / Azure Management, Akamai
 
 ---
 
-### Version Control, IDEs & Tools
+### Programming Languages / Libraries
 
-**Highly Experienced:** Git, SVN, Makefiles/CMake, Visual Studio, Code::Blocks, Photoshop/GIMP, VirtualBox/VM Ware, Filezilla, Google Drive, Microsoft Office
+**Highly Experienced:** C/C++, PowerShell, C#, Java, Bash, SQL, PHP, HTML, CSS, JavaScript, OpenGL/DirectX, OpenAL, Asio, Protobufs, jQuery, WordPress
+
+**Proficient:** Go, Python, Android, Glib, Arduino, PIC Basic, Assembly, HLSL/GLSL
+
+---
+
+### Development Tools / IDEs
+
+**Highly Experienced:** Git, SVN, Makefiles/CMake, Atom, Visual Studio, Photoshop/GIMP, Atlassian JIRA/Bitbucket/Crucible
 
 **Proficient:** Perforce, Mercurial, Flex/Bison, Fossil, IntelliJ, NetBeans, Eclipse
 
 ---
 
-### Server Management / Operating Systems
+### Personal Projects
 
-**Operating Systems:** Linux (RHEL/CentOS/Fedora, Debian/Ubuntu, etc.), Windows
+MMORPG using C++, Asio, and google Flatbuffers.
 
-**Experienced Managing:** Docker, Web (Apache/Nginx/IIS), Database (MySQL/MSSQL), DNS, DHCP, Mail, Custom Applications
+Suite of web-related servers in C++ (HTTP, FTP, SQL, SMTP, POP)
 
-Also experienced setting up a physical network, including the planning and installing of equipment.
-
----
-
-### Education
-
-**Champlain College**, Burlington VT
-<span class="resume__right">**2012 - Present**</span>
-
-<span class="resume__indent">Majoring in Computer Science & Innovation, with a minor in Game/Simulation Programming</span>
-
-**Berkshire Community College**, Pittsfield, MA
-<span class="resume__right">**2010**</span>  
-
-**McCann Vocational Technical High School**, North Adams, MA
-<span class="resume__right">**2008 - 2012**</span>  
-
-<span class="resume__indent">Studying Information Technology & Engineering</span>
+Multiple iterations of a Game Engine / Library using OpenGL & Lua with a focus on performance.
 
 ---
 

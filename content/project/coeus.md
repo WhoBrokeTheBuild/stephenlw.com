@@ -8,4 +8,5 @@ logo = "/images/coeus.png"
     github = "http://github.com/whobrokethebuild/Coeus"
 
 +++
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget tellus augue. Fusce mattis ultricies ullamcorper. Suspendisse eleifend nulla elit, quis pellentesque odio faucibus nec. Suspendisse potenti. Nulla sit amet vulputate felis. Morbi vehicula lacus finibus, fringilla augue sed, congue lacus.
+
+A Suite of web-related servers in C++ (HTTP, FTP, SQL, SMTP, POP)
