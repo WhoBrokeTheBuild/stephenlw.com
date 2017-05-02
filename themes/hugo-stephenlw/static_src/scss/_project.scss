@@ -1,3 +1,47 @@
+.project {
+  clear: both;
+  border-bottom: 1px solid #AAA;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.project__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.project__desc {
+  max-width: 75%;
+}
+.project__status,
+.project__plat {
+  float: right;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.project__status--indev {
+  background-color: #B3E2B1;
+  color: #3c763d;
+}
+.project__status--onhold {
+  background-color: #F2DB9D;
+  color: #8a6d3b;
+}
+.project__status--discon {
+  background-color: #E3A390;
+  color: #a94442;
+}
+.project__plat--linux {
+}
+.project__plat--win {
+  background-color: #B1CDE2;
+  color: #175482;
+}
+.project__plat--cross {
+  background-color: #E0B4E6;
+  color: #5b1365;
+}
 .projectList
 {
 }
@@ -45,78 +89,92 @@
     line-height: 20px;
     margin-left: 5px;
     background-color: #AAA;
-    color: #000;
+    color: #FFF;
 
     &::after
     {
         font-size: 14px;
     }
 }
-.projectListItem__tag--go
+.projectListItem__tag--indev
 {
-    background-color: $color_1;
-    color: #FFF;
+    color: $color_status_indev;
+    background-color: $bgcolor_status_indev;
     font-size: 0;
 
-    &::after
-    {
-        content: "Go";
+    &::after {
+        content: "In-Development";
     }
 }
-.projectListItem__tag--c
+.projectListItem__tag--onhold
 {
-    background-color: $color_2;
-    color: #FFF;
+    color: $color_status_onhold;
+    background-color: $bgcolor_status_onhold;
     font-size: 0;
 
-    &::after
-    {
-        content: "C";
+    &::after {
+        content: "On-Hold";
     }
 }
-.projectListItem__tag--cpp
+.projectListItem__tag--discontinued
 {
-    background-color: $color_3;
-    color: #FFF;
+    color: $color_status_discontinued;
+    background-color: $bgcolor_status_discontinued;
     font-size: 0;
 
-    &::after
-    {
-        content: "C++";
+    &::after {
+        content: "Discontinued";
     }
 }
-.projectListItem__tag--java
+.projectListItem__tag--cross-platform,
+.projectListItem__tag--linux,
+.projectListItem__tag--windows
 {
-    background-color: $color_4;
-    color: #FFF;
+    color: $color_plat;
+    background-color: $bgcolor_plat;
     font-size: 0;
-
-    &::after
-    {
-        content: "Java";
-    }
 }
+.projectListItem__tag--cross-platform::after
+{
+    content: "Cross-Platform";
+}
+.projectListItem__tag--linux::after
+{
+    content: "Linux";
+}
+.projectListItem__tag--windows::after
+{
+    content: "Windows";
+}
+.projectListItem__tag--go,
+.projectListItem__tag--c,
+.projectListItem__tag--cpp,
+.projectListItem__tag--java,
 .projectListItem__tag--asm
 {
-    background-color: $color_5;
-    color: #FFF;
+    color: $color_lang;
+    background-color: $bgcolor_lang;
     font-size: 0;
-
-    &::after
-    {
-        content: "Assembly";
-    }
 }
-.projectListItem__tag--unreal
+.projectListItem__tag--go::after
 {
-    background-color: $color_6;
-    color: #FFF;
-    font-size: 0;
-
-    &::after
-    {
-        content: "Unreal";
-    }
+    content: "Go";
+}
+.projectListItem__tag--c::after
+{
+    content: "C";
+}
+.projectListItem__tag--cpp::after
+{
+    content: "C++";
+}
+.projectListItem__tag--java::after
+{
+    content: "Java";
+}
+.projectListItem__tag--asm::after
+{
+    content: "Assembly";
 }
 .projectListItem__curve
 {

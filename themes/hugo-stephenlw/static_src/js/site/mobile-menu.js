@@ -2,7 +2,7 @@
 (function($){
 
     window.minMenuWidth = 260;
-    window.menuWidthPerc = 0.8;
+    window.menuWidthPerc = 0.6;
 
     var $mobileMenuToggle;
     var $mobileMenuWrap;

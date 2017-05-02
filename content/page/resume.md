@@ -6,123 +6,89 @@ title = "Resume"
 
 # Stephen Lane-Walsh
 
-*Software Engineer, Server Administrator, Full-Stack Developer & Curious Hobbyist*
-
-**Tel:** 413 884 5335  
 **Email:** sdl.slane@gmail.com  
 **Website:** [www.stephenlw.com](http://www.stephenlw.com)  
-**GitHub:** [www.github.com/WhoBrokeTheBuild](http://www.github.com/whobrokethebuild)  
-
----
-
-### Highlights
-
-Linux-focused system administrator with recent experience in Ansible and Docker. Experienced with server and application management across physical and virtualized systems, both in house and cloud based.
-
-Software engineer working with both web and traditional applications such as WordPress websites and C# API development. Interested in a diverse field of technologies including OS/Kernel Development, Electronic Hardware Development, Artificial Intelligence, 3D Graphics Programming, Low-Level Optimization, and Networked Programming.
+**GitHub:** [www.github.com/WhoBrokeTheBuild](http://www.github.com/WhoBrokeTheBuild)  
 
 ---
 
 ### Work Experience
 
-<b>Puzzle Development Assistant</b> at [Esc4pe](http://esc4pe.com)
-<span class="resume__right">**Aug 2016 - Present**</span>
-
-<span class="resume__indent">Arduinos, Puzzle Creation, Linux Software Development</span>
-
 <b>Systems Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
-<span class="resume__right">**May 2016 - Present**</span>
+<span class="resume__right">**May 2016 - Feb 2017**</span>
 
-<span class="resume__indent">Linux Administration, Spacewalk, PowerShell Automation Scripting, Docker, Ansible</span>
+<ul class="resume__indent">
+    <li>Linux (CentOS) &amp; Windows server administration using Spacewalk, Ansible &amp; WSUS</li>
+    <li>Docker-wrapped service management of internal tools &amp; client-facing apps</li>
+    <li>Ansible, Bash, &amp; PowerShell automation scripting</li>
+    <li>Research &amp; development of new tools including team training</li>
+    <li>Source control setup &amp; enforcement</li>
+    <li>Legacy system upgrades &amp; migrations</li>
+    <li>Regular maintenance &amp; patching</li>
+</ul>
 
 <b>Software Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
-<span class="resume__right">**2014 - May 2016**</span>
+<span class="resume__right">**Aug 2014 - May 2016**</span>
 
-<span class="resume__indent">WordPress/Tools Development, Server Management, Team Organization/Management</span>
+<ul class="resume__indent">
+    <li>Front-end web development using jQuery, Knockout &amp; React</li>
+    <li>Back-end API &amp; WordPress development using PHP</li>
+    <li>Tool development using PHP, Bash &amp; PowerShell</li>
+    <li>Application/database server administration</li>
+    <li>Source control setup &amp; enforcement</li>
+    <li>Implemented a change control process</li>
+    <li>Team organization &amp; management</li>
+</ul>
 
 <b>Sr. Web Developer</b> at [Berkshire Direct](http://berkshiredirect.com) / [The White Label Agency](http://thewhitelabelagency.com)
-<span class="resume__right">**2010 - 2014**</span>
+<span class="resume__right">**Feb 2010 - Aug 2014**</span>
+
+<span class="resume__indent">Website development, hosting, server administration, team building &amp; management</span>
 
 <b>Webmaster</b> at [Jacques Amand Intl, Ltd](http://jacquesamandintl.com) / [The Tulip Gallery](http://thetulipgallery.com)
 <span class="resume__right">**2009 - 2015**</span>
 
----
-
-### Education
-
-**Champlain College**, Burlington VT
-<span class="resume__right">**2012 - 2016**</span>
-
-<span class="resume__indent">Bachelors in Computer Science & Innovation, with a minor in Game/Simulation Programming</span>
-
-**Berkshire Community College**, Pittsfield, MA
-<span class="resume__right">**2010**</span>  
-
-**McCann Vocational Technical High School**, North Adams, MA
-<span class="resume__right">**2008 - 2012**</span>  
-
-<span class="resume__indent">Studying Information Technology & Engineering</span>
-
----
-
-### Personal Projects / Experience
-
-Created a MMORPG built on C/C++ and Unreal Engine 4 for my College Capstone Project. The servers were CentOS 7 with custom software. The protocols were built using Flatbuffers and Asio. The server architecture was designed around dockerized containers. The data was backed by a redis/MySQL pair handling all login, chat, and player game data.
-
-Created a suite of web-related server software in C++ with Asio, named [Coeus](http://github.com/whobrokethebuild/Coeus), in order to better understand the underlying protocols. Includes HTTP, FTP, SMTP, POP3, IMAP4, SQL, and a scripting language named CSL.
-
-Created an Operating System named [ArcOS](http://github.com/whobrokethebuild/ArcOS) in x86 ASM which implemented several commands in 16bit real-mode.
-
-Created several iterations of a C++ library / game engine originally called [Arc](http://github.com/whobrokethebuild/Arc-2.0) and later named [Dusk](http://github.com/whobrokethebuild/Dusk). Integrated with OpenGL and Lua as well as including a host of helper functions and classes, with a large focus on performance.
-
-Created a Hugo-like static-site generator in Go named [GoingUp](http://github.com/whobrokethebuild/GoingUp) that uses Markdown for content.
-
----
-
-### System Administration
-
-**Highly Experienced:** CentOS/RHEL Linux, Windows Server 2008+, Spacewalk, Docker, Ansible, VMWare vSphere, Apache/Nginx, MySQL, Active Directory, DNS, Winbind/Realmd
-
-**Proficient:** IIS, MSSQL, EMC SAN, Microsoft Exchange, DHCP, Rackspace / Azure Management, Akamai
+<span class="resume__indent">Website design, development, hosting, &amp; management</span>
 
 ---
 
 ### Programming Languages / Libraries
 
-**Highly Experienced:** C/C++, PowerShell, C#, Java, Bash, SQL, PHP, HTML, CSS, JavaScript, OpenGL/DirectX, OpenAL, Asio, Protobufs, jQuery, WordPress
+**Highly Experienced:** C/C++, C#, Java, Bash, PowerShell, SQL, PHP, HTML, CSS JS, OpenGL/DirectX, Protobufs/FlatBuffers, jQuery, WordPress
 
-**Proficient:** Go, Python, Android, Glib, Arduino, PIC Basic, Assembly, HLSL/GLSL
+**Proficient:** Go, Python, Android, Arduino, OpenAL, OpenCL
+
+---
+
+### Operating Systems / Administration Tools
+
+**Highly Experienced:** CentOS/RHEL Linux, Windows Server 2008+, Spacewalk, Ansible, Docker, DNS, VMWare, Apache/nginx, MySQL, AD, Winbind/Realmd
+
+**Proficient:** IIS, MSSQL, EMC SAN, Microsoft Exchange, DHCP, Rackspace / Azure, Akamai
 
 ---
 
 ### Development Tools / IDEs
 
-**Highly Experienced:** Git, SVN, Makefiles/CMake, Atom, Visual Studio, Photoshop/GIMP, Atlassian JIRA/Bitbucket/Crucible
+**Highly Experienced:** Git, SVN, CMake, Makefiles, Visual Studio, Travis CI, GIMP, Jenkins, TeamCity, Atlassian JIRA/Bitbucket/Crucible
 
-**Proficient:** Perforce, Mercurial, Flex/Bison, Fossil, IntelliJ, NetBeans, Eclipse
+**Proficient:** Perforce, Mercurial, XCode, Photoshop, IntelliJ, NetBeans, Eclipse
+
+---
+
+### Education
+
+**Champlain College**
+<span class="resume__right">**2012 - 2016**</span>
+
+<span class="resume__indent">Bachelor's degree in Computer Science &amp; Innovation, with a minor in Game &amp; Simulation Programming</span>
 
 ---
 
 ### Personal Projects
 
-MMORPG using C++, Asio, and google Flatbuffers.
-
-Suite of web-related servers in C++ (HTTP, FTP, SQL, SMTP, POP)
-
-Multiple iterations of a Game Engine / Library using OpenGL & Lua with a focus on performance.
-
----
-
-### Awards & Certifications
-
-**[A+ Certified](https://certification.comptia.org/certifications/a)**
-<span class="resume__right">**2010 - 2012**</span>  
-
-**[Cisco NetRiders](http://www.academynetriders.com/index.php)** USA & Canada - 18th Place
-<span class="resume__right">**2012**</span>  
-
-**[BPA](http://www.bpa.org/)** State & Nationals - Various Awards
-<span class="resume__right">**2008 - 2012**</span>
-
-**[SkillsUSA](http://www.skillsusa.org/)** State - Various Awards
-<span class="resume__right">**2008 - 2012**</span>
+<ul>
+    <li>Wrote a 3D game/rendering engine using C, FlatCC, \& OpenGL</li>
+    <li>Created a MMORPG using C++, Asio, \& FlatBuffers</li>
+    <li>Implemented a suite of servers in C++, and later in C for HTTP, FTP, SQL, SMTP, POP \& IMAP</li>
+</ul>

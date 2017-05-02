@@ -8,13 +8,18 @@
     padding: 0;
     margin: 0;
 }
+.post__sidebar li::before {
+    content: "\00251C "
+}
+.post__sidebar li:last-child::before {
+    content: "\002514 "
+}
 @media (max-width: $screen-sm-max)
 {
     .post__sidebarTitle {
         font-size: 20px;
-        background-color: #666;
-        color: #FFF;
-        padding-left: 15px;
+        color: #000;
+        padding-top: 15px;
         cursor: pointer;
     }
     .post__sidebar ul {
@@ -26,7 +31,7 @@
         max-height: 200px;
     }
     .post__sidebar li {
-        padding: 5px 10px;
+        padding: 0px 10px;
     }
     .post__sidebarIndicator {
         transition: transform 0.3s;
@@ -49,14 +54,14 @@
     }
     .post__sidebar {
         float: right;
-        width: 20%;
+        width: 30%;
         padding-left: 15px;
     }
     .post__content
     {
-        max-width: 80%;
+        max-width: 70%;
         padding-right: 20px;
-        border-right: 5px solid #666;
+        border-right: 2px solid #000;
     }
 }
 @media (min-width: $screen-lg-min)

@@ -17,17 +17,18 @@ body
 }
 a
 {
-    color: #888;
+    color: #444;
 
     &:hover
     {
         text-decoration: none;
-        color: #444;
+        color: #12c412;
         @include transition(color 0.2s);
     }
 }
-.pageTitle
+@media (min-width: $screen-sm-min)
 {
-    font-size: 38px;
-    margin-bottom: 30px;
+    .content {
+        max-width: 80%;
+    }
 }

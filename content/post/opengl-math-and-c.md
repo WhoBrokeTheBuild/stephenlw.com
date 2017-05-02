@@ -1,5 +1,5 @@
 +++
-title = "Writing an OpenGL Game Engine. In C. From Scratch."
+title = "Writing an OpenGL Game Engine"
 +++
 
 Before we start, you're probably asking "Why?" Well, to that I say "Why not?" and leave it at that.

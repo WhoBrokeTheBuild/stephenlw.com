@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ .Site.Title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" href="/css/site.css" media="screen">
-        <link rel="stylesheet" href="/css/highlight.css" media="screen">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    </head>
+<html>
+<head>
+  <title>[Stephen Lane-Walsh] {{ .Site.Title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio and Blog of Stephen Lane-Walsh">
+  <meta name="keywords" content="Software,Engineer,System,Administrator,Blog,Portfolio,Stephen,Lane,Lane-Walsh">
+  <meta name="author" content="Stephen Lane-Walsh">
+  <link rel="stylesheet" href="/css/site.css" media="screen">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto" rel="stylesheet">
+</head>
 <body>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -19,35 +21,35 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="mobileMenuWrap hidden-sm js-mobileMenuWrap">
-    {{ range $menuItem := .Site.Params.menu }}
-        <a class="mobileMenuItem" href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
-    {{ end }}
-</div>
-<div class="js-pageWrap">
-    <div class="container header">
-        <div class="mobileMenuIcon visible-xs js-mobileMenuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="backgroundFixed hidden-xs">
+        <div class="backgroundWrap">
+            <pre class="background"></pre>
         </div>
-        <a class="header__github" href="https://github.com/whobrokethebuild">
-            <img src="/images/github.png" alt="GitHub" />
-        </a>
-        <h1 class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></h1>
-        <nav class="navbar headerMenu">
-            <div class="hidden-xs headerMenu__items">
-                {{ range $menuItem := .Site.Params.menu }}
-                    <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
-                {{ end }}
-            </div>
-            <div class="headerMenu__colorWrap">
-                <span class="headerMenu__color headerMenu__color--1"></span>
-                <span class="headerMenu__color headerMenu__color--2"></span>
-                <span class="headerMenu__color headerMenu__color--3"></span>
-                <span class="headerMenu__color headerMenu__color--4"></span>
-                <span class="headerMenu__color headerMenu__color--5"></span>
-                <span class="headerMenu__color headerMenu__color--6"></span>
-            </div>
-        </nav>
     </div>
+    <div class="mobileMenuWrap hidden-sm js-mobileMenuWrap">
+        {{ range $menuItem := .Site.Params.menu }}
+            <a class="mobileMenuItem" href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+        {{ end }}
+    </div>
+    <div class="js-pageWrap">
+        <div class="container page">
+            <div class="container header">
+                <div class="mobileMenuIcon visible-xs js-mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="header__github" target="_blank" href="https://github.com/whobrokethebuild">
+                    <img src="/images/github.png" alt="GitHub" />
+                </a>
+                <div class="header__title"><a href="{{ .Site.BaseURL }}">Stephen Lane-Walsh</a></div>
+                <nav class="navbar headerMenu hidden-xs">
+                    <div class="headerMenu__items">
+                        {{ range $menuItem := .Site.Params.menu }}
+                            <a href="{{ index $menuItem 0 }}">{{ index $menuItem 1 }}</a>
+                        {{ end }}
+                    </div>
+                </nav>
+          </div>
+          <div class="clearfix"></div>
+          <div class="content">

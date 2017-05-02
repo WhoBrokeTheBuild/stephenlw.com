@@ -29,7 +29,7 @@ pygmentstyle = "monokai"
     author = "Stephen Lane-Walsh"
 
     menu = [
-        ["/resume/",    "Resume"],
-        ["/project/",   "Projects"],
-        ["/post/",      "Blog"]
+        ["/resume/",    "/resume"],
+        ["/project/",   "/projects"],
+        ["/post/",      "/blog"]
     ]

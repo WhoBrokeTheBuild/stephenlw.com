@@ -1,33 +1,30 @@
 .frontPage
 {
     padding-bottom: 60px;
+    margin-top: 20px;
 }
 .frontPage__banner
 {
-    padding-bottom: 30px;
-    border-bottom: 5px solid #666;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
 }
-.frontPage__viewAll
-{
+.frontPage__heading {
+    font-size: 22px;
+}
+.frontPage__link {
+    font-size: 18px;
+}
+.frontPage__right {
     float: right;
-    margin-top: 20px;
-    line-height: 36px;
-}
-.frontPage__projectList,
-.frontPage__postList
-{
-    padding-bottom: 40px;
-}
-.frontPage__projectList
-{
-    border-bottom: 5px solid #666;
+    width: 30%;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #000;
 }
 @media (min-width: $screen-sm-min)
 {
-    .frontPage__projectList
-    {
-        border-right: 5px solid #666;
-        border-bottom: 0;
+    .frontPage__left {
+        width: 70%;
     }
 }

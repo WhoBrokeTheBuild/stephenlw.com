@@ -1,22 +1,27 @@
 {{ partial "header.html" . }}
 
     <div class="container frontPage">
-        <h2 class="text-center frontPage__banner">Software Engineer, Server Administrator, Full-Stack Developer &amp; Curious Hobbyist</h2>
-        <div class="frontPage__projectList col-sm-6">
-            <a href="/project" class="frontPage__viewAll">View All</a>
-            <h1>Projects</h1>
-            {{ range where .Data.Pages "Section" "project" }}
+        <div class="frontPage__right hidden-xs">
+            <div class="frontPage__heading">Blog Posts</div>
+            {{ range where .Data.Pages "Section" "post" }}
             <div>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <div class="frontPage__link"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
             </div>
             {{ end }}
         </div>
-        <div class="frontPage__blogList col-sm-6">
-            <a href="/post" class="frontPage__viewAll">View All</a>
-            <h1>Blog Posts</h1>
+        <div class="frontPage__left">
+            <div class="frontPage__banner">
+                Software Engineer, Server Administrator, Full-Stack Developer &amp; Curious Hobbyist
+            </div>
+            <p>
+                System administrator and software engineer, primarily experienced with Linux and web development. Recent work with with automation and app management tools such as Ansible and Docker. Several years of experience with software development for both websites and C++ games/applications. System management experience with physical and virtual systems, as well as a good understanding of large-scale networking. Interested in a diverse set of technologies including OS/kernel development, hardware/drivers, AI, 3D graphics programming, and networked applications.
+            </p>
+        </div>
+        <div class="visible-xs">
+            <div class="frontPage__heading">Blog Posts</div>
             {{ range where .Data.Pages "Section" "post" }}
             <div>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <div class="frontPage__link"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
             </div>
             {{ end }}
         </div>

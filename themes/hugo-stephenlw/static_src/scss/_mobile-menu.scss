@@ -13,7 +13,7 @@
     cursor: pointer;
     height: 6px;
     width: 30px;
-    background: #AAA;
+    background: #222;
     border-radius: 3px;
     opacity: 1;
     left: 0;
@@ -81,13 +81,13 @@
     width: 0;
     height: 100%;
     overflow: hidden;
-    background-color: #AAA;
-    border-top: 20px solid #666;
+    background-color: #222;
+    padding-top: 20px;
 }
 .mobileMenuItem
 {
     display: block;
-    color: #FFF;
+    color: #12c412;
     font-size: 22px;
     height: 40px;
     line-height: 40px;
@@ -95,7 +95,8 @@
 
     &:hover
     {
-        background-color: #FFF;
+        color: #0F0;
+        background-color: #444;
         @include transition(color 0.2s, background-color 0.2s);
     }
 }
