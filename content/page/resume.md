@@ -2,8 +2,6 @@
 title = "Resume"
 +++
 
-[Download as PDF](/download/Resume.pdf)
-
 # Stephen Lane-Walsh
 
 **Email:** sdl.slane@gmail.com  
@@ -13,6 +11,9 @@ title = "Resume"
 ---
 
 ### Work Experience
+
+<b>Sr. Software Engineer</b> at [Docker](https://docker.com)
+<span class="resume__right">**Aug 2017 - Present**</span>
 
 <b>Systems Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
 <span class="resume__right">**May 2016 - Feb 2017**</span>
