@@ -15,6 +15,20 @@ title = "Resume"
 <b>Sr. Software Engineer</b> at [Docker](https://docker.com)
 <span class="resume__right">**Aug 2017 - Present**</span>
 
+<ul class="resume__indent">
+    <li>Helped port our product to IBM P/Z servers</li>
+    <li>Worked with Go modules and unit tests in a pre-existing codebase</li>
+    <li>Developed Automation tooling as a commercial product</li>
+    <li>Collaborated remotely with team members around the world in a git workflow</li>
+</ul>
+
+<b>Systems Engineer</b> at [Esc4pe](http://esc4pe.com)
+<span class="resume__right">**May 2017 - Aug 2017**</span>
+
+<ul class="resume__indent">
+    <li>Embedded systems, Hardware development, network infrastructure, puzzle design</li>
+</ul>
+
 <b>Systems Engineer</b> at [MyWebGrocer](http://mywebgrocer.com)
 <span class="resume__right">**May 2016 - Feb 2017**</span>
 
@@ -89,7 +103,7 @@ title = "Resume"
 ### Personal Projects
 
 <ul>
-    <li>Wrote a 3D game/rendering engine using C, FlatCC, \& OpenGL</li>
+    <li>Developing a 3D game/rendering engine using C/C++, FlatBuffers, Networking, C++ reloading, \& OpenGL</li>
     <li>Created a MMORPG using C++, Asio, \& FlatBuffers</li>
     <li>Implemented a suite of servers in C++, and later in C for HTTP, FTP, SQL, SMTP, POP \& IMAP</li>
 </ul>
