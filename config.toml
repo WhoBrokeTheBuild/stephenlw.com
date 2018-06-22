@@ -1,5 +1,5 @@
 
-baseurl = "http://stephenlw.com/"
+baseurl = "https://www.stephenlw.com/"
 theme = "hugo-stephenlw"
 title = "Stephen Lane-Walsh"
 
