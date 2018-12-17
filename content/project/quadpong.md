@@ -1,6 +1,6 @@
 +++
 title = "Quadpong"
-tags = ["c", "cross-platform", "indev"]
+tags = ["c", "cross-platform", "discontinued"]
 github = "http://github.com/whobrokethebuild/Quadpong"
 
 +++
